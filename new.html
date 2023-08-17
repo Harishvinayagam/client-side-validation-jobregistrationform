@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="b1">
+   <div class="div1">
+    <h1 class="h" >JOB REGISTRATION FORM</h1>
+    <form id="jobsform" action="sucess.html">
+    <!-- Text box for name -->
+    <div class="f1">
+        <label for="name" class="l"><strong>Name:</strong>:</label>
+
+        <input type="text" class="text-field" id="name" name="name"><br>
+        
+    </div>
+    <!--age-->
+    <div class="f1">
+        <label for="age"><b>AGE:</b></label>
+        <input type="text" class="a7"id="age" name="age"><br>
+        
+       </div>
+     
+    <!-- Radio buttons for sex -->
+    <div class="f1">
+        <label><strong>GENDER:</strong></label>
+        <input type="radio" class="a6" id="male" name="sex" value="male">
+        <label for="male"class="a6"><b>Male</b></label>
+        <input type="radio" class="a6" id="female" name="sex" value="female" >
+        <label for="female"class="a6"><b>Female</b></label><br>
+    </div>
+
+    <!-- Text area for comments -->
+   <!--<div class="f1">
+        <label for="comments"><b>Comments:</b></label><br>
+    <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br>
+    </div>-->
+
+    <!-- List items for country selection -->
+   <div class="f1">
+        <label for="country"><b>Country:</b></label>
+        <select id="country" class="a5"name="country">
+            <option value="None">None</option>
+            <option value="INDIA">INDIA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option>
+            <!-- Add more options as needed -->
+        </select><br>
+       
+   </div>
+
+    <!-- File input for uploading -->
+    <div class="f1">
+        <label for="resume"><b>Upload Resume:</b></label>
+       <input type="file"  class="a4" id="resume" name="resume" accept=".pdf, .doc, .docx" ><br>
+       
+    </div>
+    <!--Email-->
+    <div class="f1">
+        <label for="email"><b>Email:</b></label>
+        <input type="text"  class="a3" id="email">
+        <div class="error"></div>
+    </div>
+    <!--phone no-->
+    <div class="f1">
+        <label for="phoneno"><b>Phone no:</b></label>
+        <input type="number" class="a2"id="phoneno">
+        <div class="error"></div>
+    </div>
+
+    <!-- Password field -->
+   <div class="f1">
+    <label for="password"><b>Password:</b></label>
+    <input type="password" class="a2" id="password" name="password"><br>
+    <div class="error"></div>
+   </div>
+   <!--confirm password-->
+   <div class="f1">
+    <label for="cpassword"><b>Confirm Password:</b></label>
+    <input type="password" id="cpassword" class="a1" name="cpassword"><br>
+    <div class="error"></div>
+   </div>
+    <!-- Check box -->
+    <div class="f2">
+        <input type="checkbox" id="subscribe" name="subscribe"><strong>I agree that the above filled information is actual and true to my knowledge</strong></label><br>
+    
+        <div class="error"></div>
+    </div>
+        <label for="subscribe">
+    <!-- Submit button -->
+    <button id="sbtn" class="submitBtn" type="submit"> Submit</button>
+<input type="reset" value="Reset" class="resetBtn">
+
+</form>
+</div>
+<script src="scripts.js"></script> 
+</body>
+</html>
